@@ -8,13 +8,15 @@ import 'app_snackbar.dart';
   type: AppSnackBar,
 )
 Widget buildAppSnackBarSuccess(BuildContext context) {
-  return Center(
-    child: ElevatedButton(
-      onPressed: () => AppSnackBar.showSuccess(
-        context,
-        'Data berhasil disimpan',
+  return Scaffold(
+    body: Center(
+      child: ElevatedButton(
+        onPressed: () => AppSnackBar.showSuccess(
+          context,
+          'Data berhasil disimpan',
+        ),
+        child: const Text('Show Success SnackBar'),
       ),
-      child: const Text('Show Success SnackBar'),
     ),
   );
 }
@@ -24,13 +26,15 @@ Widget buildAppSnackBarSuccess(BuildContext context) {
   type: AppSnackBar,
 )
 Widget buildAppSnackBarInfo(BuildContext context) {
-  return Center(
-    child: ElevatedButton(
-      onPressed: () => AppSnackBar.showInfo(
-        context,
-        'Sedang memproses...',
+  return Scaffold(
+    body: Center(
+      child: ElevatedButton(
+        onPressed: () => AppSnackBar.showInfo(
+          context,
+          'Sedang memproses...',
+        ),
+        child: const Text('Show Info SnackBar'),
       ),
-      child: const Text('Show Info SnackBar'),
     ),
   );
 }
@@ -40,13 +44,15 @@ Widget buildAppSnackBarInfo(BuildContext context) {
   type: AppSnackBar,
 )
 Widget buildAppSnackBarError(BuildContext context) {
-  return Center(
-    child: ElevatedButton(
-      onPressed: () => AppSnackBar.showError(
-        context,
-        'Terjadi kesalahan',
+  return Scaffold(
+    body: Center(
+      child: ElevatedButton(
+        onPressed: () => AppSnackBar.showError(
+          context,
+          'Terjadi kesalahan',
+        ),
+        child: const Text('Show Error SnackBar'),
       ),
-      child: const Text('Show Error SnackBar'),
     ),
   );
 }
